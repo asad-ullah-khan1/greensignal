@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>GreenSignal| Your SEO one stop shop</title>
+</head>
+
+<body>
+
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+
+        <main class="container mx-auto mt-10 p-4">
+            <h1 class="text-4xl font-bold text-center text-gray-800">Our Services</h1>
+            <section class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- SEO Service -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="flex items-center justify-center mb-4">
+                        <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M10 20l5-8-5-8M15 12H3"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">SEO Optimization</h2>
+                    <p class="text-gray-600 mb-4">
+                        Boost your website's visibility and drive more traffic with our expert SEO strategies. We ensure
+                        that your site ranks higher in search results with comprehensive on-page optimization and
+                        keyword research.
+                    </p>
+                    <a href="#" class="block text-center text-blue-600 hover:underline">Learn More</a>
+                </div>
+
+                <!-- WordPress Design and Development Service -->
+                <div
+                    class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 ease-in-out">
+                    <div class="flex items-center justify-center mb-4">
+                        <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 20l9-5-9-5-9 5M12 12V3l9 5-9 5-9-5 9-5v9l9 5-9 5z"></path>
+                        </svg>
+                    </div>
+                    <h2 class="text-2xl font-semibold text-gray-800 text-center mb-4">WordPress Design & Development
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        We create stunning and responsive WordPress websites tailored for your business needs. From
+                        design to full development, our WordPress solutions are crafted to engage visitors and deliver
+                        results.
+                    </p>
+                    <a href="#" class="block text-center text-blue-600 hover:underline">Learn More</a>
+                </div>
+
+            </section>
+        </main>
+
+        <!-- Script for toggling mobile menu -->
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+</body>
+
+</html>

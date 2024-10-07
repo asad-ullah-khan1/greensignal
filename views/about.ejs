@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>GreenSignal| Your SEO one stop shop</title>
+</head>
+
+<body>
+
+    <!-- Include Navbar -->
+    <%- include('partials/navbar') %>
+
+        <main class="container mx-auto mt-10 p-4">
+            <h1 class="text-4xl font-bold text-center text-gray-800">About Us</h1>
+
+            <!-- Company Story -->
+            <section class="mt-10 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Story</h2>
+                <p class="text-gray-600">
+                    Founded in [Year], we are passionate about delivering top-notch digital solutions. With expertise in
+                    SEO, WordPress design, and web development, we strive to help businesses succeed in the online
+                    world.
+                </p>
+            </section>
+
+            <!-- Mission Statement -->
+            <section class="mt-10 bg-white p-6 rounded-lg shadow-md">
+                <h2 class="text-3xl font-semibold text-gray-800 mb-4">Our Mission</h2>
+                <p class="text-gray-600">
+                    Our mission is to empower businesses of all sizes by providing innovative and customized web
+                    solutions tailored to their unique needs. We prioritize quality, performance, and long-lasting
+                    relationships with our clients.
+                </p>
+            </section>
+
+            <!-- Team Section (Optional) -->
+            <section class="mt-10">
+                <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Meet Our Team</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                    <!-- Team Member 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4" src="path/to/profile1.jpg" alt="Team Member 1">
+                        <h3 class="text-xl font-medium text-gray-800">John Doe</h3>
+                        <p class="text-gray-600">CEO & Founder</p>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4" src="path/to/profile2.jpg" alt="Team Member 2">
+                        <h3 class="text-xl font-medium text-gray-800">Jane Smith</h3>
+                        <p class="text-gray-600">Lead Developer</p>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+                        <img class="w-32 h-32 mx-auto rounded-full mb-4" src="path/to/profile3.jpg" alt="Team Member 3">
+                        <h3 class="text-xl font-medium text-gray-800">Emily Johnson</h3>
+                        <p class="text-gray-600">SEO Specialist</p>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!-- Script for toggling mobile menu -->
+        <script>
+            const menuBtn = document.getElementById('menu-btn');
+            const menu = document.getElementById('mobile-menu');
+
+            menuBtn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+            });
+        </script>
+</body>
+
+</html>
